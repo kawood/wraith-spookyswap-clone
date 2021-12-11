@@ -2,6 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
-.my-icon:before {
-  content: icon here;
+.main-bg {
+  background-image: url(https://assets.spookyswap.finance/background/cloud_cat.png),
+    url(https://assets.spookyswap.finance/background/clouds.png),
+    url(https://assets.spookyswap.finance/background/moon_cat_.png),
+    url(https://assets.spookyswap.finance/background/stars_.png),
+    radial-gradient(
+      circle at center bottom,
+      rgb(50, 94, 128) 10%,
+      rgb(16, 30, 62) 90%
+    );
+  background-repeat: no-repeat, repeat-x, no-repeat, no-repeat, no-repeat;
+  background-attachment: fixed;
+  background-position: center bottom -64 px, center bottom -84 px, center top,
+    center top 48 px, center top;
 }
